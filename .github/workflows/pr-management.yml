@@ -6,6 +6,7 @@ on:
 
 jobs:
   check-duplicates:
+    if: github.repository_owner == 'anomalyco'
     runs-on: ubuntu-22.04
     permissions:
       contents: read
@@ -72,6 +73,7 @@ jobs:
           fi
 
   add-contributor-label:
+    if: github.repository_owner == 'anomalyco'
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write

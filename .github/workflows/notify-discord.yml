@@ -6,6 +6,7 @@ on:
 
 jobs:
   notify:
+    if: github.repository_owner == 'anomalyco'
     runs-on: ubuntu-22.04
     steps:
       - name: Send nicely-formatted embed to Discord
