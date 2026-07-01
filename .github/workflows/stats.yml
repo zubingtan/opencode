@@ -9,7 +9,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   stats:
-    if: github.repository == 'anomalyco/opencode'
+    if: github.repository_owner == 'anomalyco' && github.repository == 'anomalyco/opencode'
     runs-on: ubuntu-22.04
     permissions:
       contents: write

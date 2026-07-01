@@ -17,6 +17,7 @@ on:
 
 jobs:
   close:
+    if: github.repository_owner == 'anomalyco'
     runs-on: ubuntu-latest
     timeout-minutes: 240
     permissions:

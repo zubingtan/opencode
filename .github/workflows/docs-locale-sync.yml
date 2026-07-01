@@ -9,7 +9,7 @@ on:
 
 jobs:
   sync-locales:
-    if: false
+    if: github.repository_owner == 'anomalyco' && false
     #if: github.actor != 'opencode-agent[bot]'
     runs-on: ubuntu-22.04
     permissions:

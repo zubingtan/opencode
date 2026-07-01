@@ -10,7 +10,7 @@ env:
 
 jobs:
   update-docs:
-    if: github.repository == 'sst/opencode'
+    if: github.repository_owner == 'anomalyco' && github.repository == 'sst/opencode'
     runs-on: ubuntu-22.04
     permissions:
       id-token: write
